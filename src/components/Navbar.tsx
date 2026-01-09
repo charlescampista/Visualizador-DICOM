@@ -12,6 +12,9 @@ export function Navbar() {
       <Link to="/" style={{ marginRight: '12px' }}>
         Estudos
       </Link>
+      <Link to="/worklist" style={{ marginRight: '12px' }}>
+        Worklist
+      </Link>
       <Link to="/viewer" style={{ marginRight: '12px' }}>
         Visualizador
       </Link>

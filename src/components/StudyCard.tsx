@@ -14,9 +14,11 @@ export function StudyCard({ study, onSelect }: Props) {
         padding: '12px',
         borderRadius: '8px',
         cursor: 'pointer',
+        backgroundColor: 'white'
       }}
-    >
-      <strong>{study.patientName}</strong>
+      >
+      <p>ID: {study.id}</p>
+      <p>Nome: {study.patientName}</p>
       <p>Modalidade: {study.modality}</p>
       <small>{study.date}</small>
     </div>
