@@ -10,7 +10,7 @@ type Props = {
 
 export function InstanceCard({ instance, onSelect }: Props) {
   const selectedInstance = useAppSelector((state) => state.instances.selectedInstance);
-  const baseURL = 'https://teste.charlescampista.cloud'; // ou sua base_url
+  const baseURL = '<YOUR BASE URL HERE>'; // ou sua base_url
 
   return (
     <div
