@@ -27,9 +27,9 @@ export function Home() {
   );
 
   const instances = useAppSelector((state) => state.instances.list);
-  const selectedInstance = useAppSelector(
-    (state) => state.instances.selectedInstance
-  );
+  // const selectedInstance = useAppSelector(
+  //   (state) => state.instances.selectedInstance
+  // );
 
 
 
@@ -106,7 +106,7 @@ export function Home() {
           backgroundColor: 'lightgreen'
         }}
       >
-        {selectedStudy ? (<h5>Estudo Selecionado: {selectedStudy.id}</h5>) : (<h5>Nenhum estudo selecionado</h5>)}
+        
         <h2>Estudos</h2>
         <StudyList
           studies={studies}
@@ -123,7 +123,7 @@ export function Home() {
           backgroundColor: 'lightblue'
         }}
       >
-        {selectedStudy ? (<h5>Estudo Selecionado: {selectedStudy.id}</h5>) : (<h5>Nenhum estudo selecionado</h5>)}
+        
         <h2>Series</h2>
 
         <SerieList

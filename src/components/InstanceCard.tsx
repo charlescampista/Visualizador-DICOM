@@ -1,7 +1,7 @@
 
 
 import type { Instance } from '../types/Instance';
-import { useAppSelector } from '../app/hooks';
+
 
 type Props = {
   instance: Instance;
@@ -9,8 +9,8 @@ type Props = {
 };
 
 export function InstanceCard({ instance, onSelect }: Props) {
-  const selectedInstance = useAppSelector((state) => state.instances.selectedInstance);
-  const baseURL = 'https://teste.charlescampista.cloud'; // ou sua base_url
+  //const baseURL = 'https://teste.charlescampista.cloud'; // ou sua base_url
+  const baseURL = 'http://localhost:3000'; // ou sua base_url
 
   return (
     <div
